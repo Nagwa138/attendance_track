@@ -37,14 +37,6 @@ global $connection;
 
 $result = mysqli_query( $connection , "SELECT * FROM students");
 
-
-// for
-// foreach
-// while
-// do while
-
-
-
 while( $row = mysqli_fetch_assoc($result) ){
 
     echo "<tr>"; 
@@ -62,11 +54,6 @@ while( $row = mysqli_fetch_assoc($result) ){
     echo "</td>";
     echo "<td><a class='btn btn-warning' href='edit_student.php?id=".$row['id']."' >Edit</a> <a class='btn btn-dark'  href='delete_student.php?id=".$row['id']."' >Delete</a></td>";
     echo "</tr>";
-  
-    
-    // print_r($row);
-
-    // echo "end of row <br>"; 
 
 }
 

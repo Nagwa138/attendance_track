@@ -43,9 +43,6 @@ include './includes/functions.php';
                     </a>';
             }
 
-
-
-
         ?>
 
     </div>

@@ -3,15 +3,13 @@
 date_default_timezone_set('Africa/Cairo');
 
 
-//CONNECT
-
 $host = "localhost";
 
 $user = "root";
 
 $password = "";
 
-$db = "shop";
+$db = "school";
 
 $connection = mysqli_connect($host , $user , $password , $db);
 
@@ -44,24 +42,15 @@ function isTodayTracked(){
 
     } else {
 
-
         $query  = mysqli_query($connection , "INSERT INTO days (date) VALUES ('{$x}')");
 
         if(!$query){
-
             echo "Error Occurred !! ".mysqli_error($connection);
-
         } else {
-
             $track = false;
-
-
         }
 
-
-
     }
-
 
     return $track;
 

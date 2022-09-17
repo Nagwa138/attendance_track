@@ -14,11 +14,11 @@ include "includes/header.php";
 <?php
 
 if(isset($_GET['id'])){
-    $customer_id = $_GET['id'];
+    $student_id = $_GET['id'];
 
     //GET CUSTOMER FROM DB
 
-    $select = mysqli_query($connection , "SELECT * FROM students WHERE id = '{$customer_id}' LIMIT 1");
+    $select = mysqli_query($connection , "SELECT * FROM students WHERE id = '{$student_id}' LIMIT 1");
 
     if(!$select){
         echo "Error Occurred ".mysqli_error($connection);
