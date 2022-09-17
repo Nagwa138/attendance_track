@@ -18,16 +18,6 @@ include "includes/header.php";
                 <form action="add_student.php" style="margin:auto" class="col-8" enctype="multipart/form-data"
                     method="post">
 
-                    <!-- 
-                    <br>
-                    <div class="from-group">
-
-                        <label for="image">
-                            Customer Image
-                        </label>
-                        <input id="image" class="form-control" type="file" name="image" style="padding: 10px;">
-                    </div> -->
-
                     <br>
                     <div class="from-group">
 
@@ -63,39 +53,6 @@ if(isset($_POST['form_sub'])){
     $first = $_POST['first_name'];
     $last = $_POST['last_name'];
 
-
-    // //IMAGE
-    // $errors = array();
-    // $file_name = $_FILES['image']['name'];
-    // $file_size = $_FILES['image']['size'];
-    // $file_tmp = $_FILES['image']['tmp_name'];
-    // $file_type = $_FILES['image']['type'];
-
-
-    // $file_end = explode('.',$file_name);
-
-    // $file_ext = strtolower(end($file_end));
-
-
-    // $extensions = array("jpeg", "jpg", "png");
-
-    // if (in_array($file_ext, $extensions) === false) {
-    //     $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
-    // }
-
-    // if ($file_size > 2097152) {
-    //     $errors[] = 'File size must be excately 2 MB';
-    // }
-
-
-
-    // $nw_name  =time().'.'.$file_ext;
-
-
-    // if (empty($errors) == true) {
-
-    //     move_uploaded_file($file_tmp, "students_images/" . $nw_name);
-
   $result = mysqli_query( $connection , "INSERT INTO students (first_name , last_name ) VALUES ('$first' , '$last')");
 
     if($result){
@@ -103,27 +60,6 @@ if(isset($_POST['form_sub'])){
     } else {
         echo "Error ".mysqli_error($connection);
     }
-
-        
-    // } else {
-    //     print_r($errors);
-    // }
-
-    //COPY IMAGE
-
-    //RENAME 
-
-    //INSERT DB
-
-    //INSERT DATABASE
-
- 
-
-    //INERT READ UPDATE DELETE
-
-  
-
-    //INSERTED
 
 }
 

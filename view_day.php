@@ -4,48 +4,7 @@ include "./includes/header.php";
 
 include "includes/functions.php";
 
-
-
-//INERT READ UPDATE DELETE
-
-// $result = mysqli_query( $connection , "SELECT * FROM students");
-
-
-// // for
-// // foreach
-// // while
-// // do while
-
-
-// while( $row = mysqli_fetch_assoc($result) ){
-
-//     echo "<tr>";
-//     echo "<td>";
-//     echo $row['id'];
-//     echo "</td>";
-//     echo "<td>";
-//     echo $row['first_name'];
-//     echo "</td>";
-//     echo "<td>";
-//     echo $row['last_name'];
-//     echo "</td>";
-//     echo "<td>";
-//     echo $row['date'];
-//     echo "</td>";
-//     echo "<td><a class='btn btn-warning' href='edit_student.php?id=".$row['id']."' >Edit</a> <a class='btn btn-dark'  href='delete_student.php?id=".$row['id']."' >Delete</a></td>";
-//     echo "</tr>";
-
-
-//     // print_r($row);
-
-//     // echo "end of row <br>";
-
-// }
-
-
 ?>
-
-
 
 <!-- Header-->
 <header class="bg-primary bg-gradient text-white">
